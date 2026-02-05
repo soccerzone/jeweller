@@ -13,15 +13,19 @@ const Header: React.FC = () => {
     document.body.style.overflow = '';
   };
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
     if (href.startsWith('#')) {
       e.preventDefault();
       closeMobileMenu();
+
       const target = document.querySelector(href);
       if (target) {
         target.scrollIntoView({
           behavior: 'smooth',
-          block: 'start'
+          block: 'start',
         });
       }
     }
@@ -35,7 +39,7 @@ const Header: React.FC = () => {
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="#" className="text-2xl font-bold tracking-wider">
+              <a href="#home" className="text-2xl font-bold tracking-wider">
                 <span className="text-black">Icekettle Jeweller</span>
               </a>
               <p className="text-xs text-gray-600 italic">Feels Rich</p>
@@ -44,34 +48,40 @@ const Header: React.FC = () => {
             {/* Menu Items */}
             <div className="flex items-center space-x-8">
               <a
-                href="#"
-                onClick={(e) => handleNavClick(e, '#')}
+                href="#home"
+                onClick={(e) => handleNavClick(e, '#home')}
                 className="text-sm font-medium text-black border-b-2 border-black pb-1"
               >
                 Home
               </a>
+
               <a
-                href="#about"
-                onClick={(e) => handleNavClick(e, '#about')}
+                href="#jeweller"
+                onClick={(e) => handleNavClick(e, '#jeweller')}
                 className="text-sm font-medium text-gray-700 hover:text-black transition"
               >
-                ABOUT US
+                About Us
               </a>
+
               <a
                 href="#contact"
                 onClick={(e) => handleNavClick(e, '#contact')}
                 className="text-sm font-medium text-gray-700 hover:text-black transition"
               >
-                CONTACT
+                Contact
               </a>
 
-              {/* Cart Icon */}
-              <a href="#" className="relative text-gray-700 hover:text-black transition">
+              {/* Cart Button */}
+              <button
+                type="button"
+                aria-label="View cart"
+                className="relative text-gray-700 hover:text-black transition"
+              >
                 <i className="fas fa-shopping-cart text-lg"></i>
                 <span className="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                   0
                 </span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -83,7 +93,7 @@ const Header: React.FC = () => {
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div>
-              <a href="#" className="text-xl font-bold tracking-wider">
+              <a href="#home" className="text-xl font-bold tracking-wider">
                 <span className="text-black">Icekettle Jeweller</span>
               </a>
               <p className="text-xs text-gray-600 italic">Feels Rich</p>
@@ -95,15 +105,21 @@ const Header: React.FC = () => {
                 onClick={openMobileMenu}
                 className="text-gray-700 hover:text-black"
                 aria-label="Open menu"
+                type="button"
               >
                 <i className="fas fa-bars text-xl"></i>
               </button>
-              <a href="#" className="relative text-gray-700 hover:text-black">
+
+              <button
+                type="button"
+                aria-label="View cart"
+                className="relative text-gray-700 hover:text-black"
+              >
                 <i className="fas fa-shopping-cart text-lg"></i>
                 <span className="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                   0
                 </span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -120,30 +136,34 @@ const Header: React.FC = () => {
             onClick={closeMobileMenu}
             className="mb-8 text-gray-700 hover:text-black"
             aria-label="Close menu"
+            type="button"
           >
             <i className="fas fa-times text-2xl"></i>
           </button>
+
           <div className="flex flex-col space-y-6">
             <a
-              href="#"
-              onClick={(e) => handleNavClick(e, '#')}
+              href="#home"
+              onClick={(e) => handleNavClick(e, '#home')}
               className="text-base font-medium text-black"
             >
               Home
             </a>
+
             <a
-              href="#about"
-              onClick={(e) => handleNavClick(e, '#about')}
+              href="#jeweller"
+              onClick={(e) => handleNavClick(e, '#jeweller')}
               className="text-base font-medium text-gray-700 hover:text-black"
             >
-              ABOUT US
+              Jeweller Us
             </a>
+
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
               className="text-base font-medium text-gray-700 hover:text-black"
             >
-              CONTACT
+              Contact
             </a>
           </div>
         </div>
@@ -154,7 +174,7 @@ const Header: React.FC = () => {
         <div
           onClick={closeMobileMenu}
           className="fixed inset-0 bg-black bg-opacity-50 z-40"
-        ></div>
+        />
       )}
     </header>
   );

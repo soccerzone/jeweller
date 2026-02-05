@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import React, { useState } from 'react';
 import { FormData } from '../types';
 
@@ -22,35 +23,34 @@ const ContactSection: React.FC = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-    try {
-      // Here you would integrate with EmailJS or your backend API
-      // For now, we'll simulate a successful submission
-      setFormMessage({
-        text: 'Thank you for your message! We will get back to you soon.',
-        type: 'success',
-      });
+  try {
+    await emailjs.send(
+      'YOUR_SERVICE_ID',
+      'YOUR_TEMPLATE_ID',
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      },
+      'YOUR_PUBLIC_KEY'
+    );
 
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        message: '',
-      });
+    setFormMessage({
+      text: 'Thank you for your message! We will get back to you soon.',
+      type: 'success',
+    });
 
-      // Hide message after 5 seconds
-      setTimeout(() => {
-        setFormMessage({ text: '', type: '' });
-      }, 5000);
-    } catch (error) {
-      setFormMessage({
-        text: 'Failed to send message. Please try again.',
-        type: 'error',
-      });
-    }
-  };
+    setFormData({ name: '', email: '', message: '' });
+  } catch (error) {
+    setFormMessage({
+      text: 'Failed to send message. Please try again.',
+      type: 'error',
+    });
+  }
+};
 
   return (
     <section id="contact" className="py-12 md:py-20 bg-white">
