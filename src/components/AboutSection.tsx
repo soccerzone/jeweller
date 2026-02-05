@@ -8,7 +8,7 @@ const AboutSection: React.FC = () => {
         {/* Image Section */}
         <div className="relative h-[300px] md:h-auto">
           <img
-            src="https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770107949/bayu-prahara-5eAvq_7ibq0-unsplash_scmrk4.jpg"
+            src="https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770314520/bayu-prahara-5eAvq_7ibq0-unsplash_pdmrhx.jpg"
             alt="Jeweller craftsmanship"
             className="w-full h-full rounded-lg object-cover"
           />

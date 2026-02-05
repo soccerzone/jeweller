@@ -38,12 +38,16 @@ const Header: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <a href="#home" className="text-2xl font-bold tracking-wider">
-                <span className="text-black">Icekettle Jeweller</span>
-              </a>
-              <p className="text-xs text-gray-600 italic">Feels Rich</p>
-            </div>
+
+<div className="flex-shrink-0">
+  <a href="#home" className="flex items-center space-x-2">
+    <img
+      src="https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770314567/IKJ_seit4c.png"   // or your Cloudinary / public path
+      alt="Icekettle Jeweller Logo"
+      className="h-16 w-auto object-contain"
+    />
+  </a>
+</div>
 
             {/* Menu Items */}
             <div className="flex items-center space-x-8">
@@ -92,12 +96,16 @@ const Header: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
-            <div>
-              <a href="#home" className="text-xl font-bold tracking-wider">
-                <span className="text-black">Icekettle Jeweller</span>
-              </a>
-              <p className="text-xs text-gray-600 italic">Feels Rich</p>
-            </div>
+
+<div className="flex-shrink-0">
+  <a href="#home" className="flex items-center space-x-2">
+    <img
+      src="https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770314567/IKJ_seit4c.png"   // or your Cloudinary / public path
+      alt="Icekettle Jeweller Logo"
+      className="h-16 w-auto object-contain"
+    />
+  </a>
+</div>
 
             {/* Mobile Menu Button & Cart */}
             <div className="flex items-center space-x-4">

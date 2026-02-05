@@ -7,21 +7,21 @@ const CategorySection: React.FC = () => {
       id: 1,
       title: 'Ultra Luxury',
       imageUrl:
-        'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770113104/jenish-ghaadiya-gtgTdWTZpOQ-unsplash_uieavg.jpg',
+        'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770314519/jenish-ghaadiya-gtgTdWTZpOQ-unsplash_bhzlfn.jpg',
       altText: 'Ultra Luxury watches',
     },
     {
       id: 2,
       title: 'Mechanical',
       imageUrl:
-        'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770111263/kent-lam-sVQ4FCQmrbA-unsplash_b8i0qa.jpg',
+        'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770314518/kent-lam-sVQ4FCQmrbA-unsplash_trcoya.jpg',
       altText: 'Mechanical watches',
     },
     {
       id: 3,
       title: 'Swiss luxury',
       imageUrl:
-        'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770113786/patrick-langwallner-GaHmbqNh5q8-unsplash_sqapky.jpg',
+        'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770314519/patrick-langwallner-GaHmbqNh5q8-unsplash_qhxvtp.jpg',
       altText: 'Swiss luxury watches',
     },
   ];

@@ -5,15 +5,15 @@ const HeroSection: React.FC = () => {
 
   const slides = [
     {
-      url: 'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770081538/shahrukh-rehman-05IxAEjVNl0-unsplash_xx03tg.jpg',
+      url: 'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770314711/shahrukh-rehman-05IxAEjVNl0-unsplash_1_mdv72g.jpg',
       alt: 'Luxury Jeweller display 1',
     },
     {
-      url: 'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770081535/ryan-waring-p2WUEFGrAdA-unsplash_y1inf1.jpg',
+      url: 'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770314519/ryan-waring-p2WUEFGrAdA-unsplash_c9lerr.jpg',
       alt: 'Luxury Jeweller display 2',
     },
     {
-      url: 'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770081055/ern-gan-3vSGyBo8_pU-unsplash_qhplgt.jpg',
+      url: 'https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770314519/ern-gan-3vSGyBo8_pU-unsplash_tw6syk.jpg',
       alt: 'Luxury Jeweller display 3',
     },
   ];
