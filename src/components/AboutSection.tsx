@@ -10,7 +10,7 @@ const AboutSection: React.FC = () => {
           <img
             src="https://res.cloudinary.com/dz2bz1qsw/image/upload/v1770107949/bayu-prahara-5eAvq_7ibq0-unsplash_scmrk4.jpg"
             alt="Jeweller craftsmanship"
-            className="w-full h-full object-cover"
+            className="w-full h-full rounded-lg object-cover"
           />
           <div className="absolute inset-0 bg-white/40"></div>
         </div>
@@ -25,23 +25,11 @@ const AboutSection: React.FC = () => {
               designed pieces that celebrate elegance, confidence, and individuality.
             </p>
 
-            <p className="text-gray-700 leading-relaxed">
-              Drawing inspiration from rich cultural influences and modern aesthetics,
-              our collections are thoughtfully designed to reflect contemporary tastes
-              while maintaining a sense of timeless sophistication.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed">
-              Icekettle Jeweller stands for more than jewelry — it represents
-              craftsmanship, heritage, and a promise to deliver enduring beauty in
-              every creation.
-            </p>
-
             <a
               href="#about"
-              className="inline-block bg-black text-white px-8 py-3 rounded hover:bg-gray-800 transition"
+              className="inline-block bg-black text-white px-8 py-3 rounded-lg  hover:bg-gray-800 transition"
             >
-              About us
+              ABOUT US
             </a>
           </div>
         </div>

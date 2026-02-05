@@ -52,15 +52,15 @@ const Header: React.FC = () => {
                 onClick={(e) => handleNavClick(e, '#home')}
                 className="text-sm font-medium text-black border-b-2 border-black pb-1"
               >
-                Home
+                HOME
               </a>
 
               <a
-                href="#jeweller"
-                onClick={(e) => handleNavClick(e, '#jeweller')}
+                href="#about"
+                onClick={(e) => handleNavClick(e, '#about')}
                 className="text-sm font-medium text-gray-700 hover:text-black transition"
               >
-                About Us
+                ABOUT US
               </a>
 
               <a
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
                 onClick={(e) => handleNavClick(e, '#contact')}
                 className="text-sm font-medium text-gray-700 hover:text-black transition"
               >
-                Contact
+                CONTACT
               </a>
 
               {/* Cart Button */}
@@ -147,7 +147,7 @@ const Header: React.FC = () => {
               onClick={(e) => handleNavClick(e, '#home')}
               className="text-base font-medium text-black"
             >
-              Home
+              HOME
             </a>
 
             <a
@@ -155,7 +155,7 @@ const Header: React.FC = () => {
               onClick={(e) => handleNavClick(e, '#jeweller')}
               className="text-base font-medium text-gray-700 hover:text-black"
             >
-              Jeweller Us
+              ABOUT US
             </a>
 
             <a
@@ -163,7 +163,7 @@ const Header: React.FC = () => {
               onClick={(e) => handleNavClick(e, '#contact')}
               className="text-base font-medium text-gray-700 hover:text-black"
             >
-              Contact
+              CONTACT
             </a>
           </div>
         </div>

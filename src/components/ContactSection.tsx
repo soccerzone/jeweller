@@ -78,17 +78,17 @@ const ContactSection: React.FC = () => {
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <i className="fas fa-phone text-xl text-gray-700"></i>
-                <p className="text-gray-700">00971 4 369 8056/ 57</p>
+                <p className="text-gray-700">+44 7901 307072</p>
               </div>
 
               <div className="flex items-center space-x-4">
                 <i className="far fa-envelope text-xl text-gray-700"></i>
-                <p className="text-gray-700">ceo@icekettlejwelry.com</p>
+                <p className="text-gray-700">ceo@icekettlejewller.com</p>
               </div>
 
               <div className="flex items-start space-x-4">
                 <i className="fas fa-map-marker-alt text-xl text-gray-700 mt-1"></i>
-                <p className="text-gray-700">20G, Almas Tower, JLT, Dubai, UAE</p>
+                <p className="text-gray-700">Awudu Ekpekha Boulevard Street, Lekki, Lagos, Nigeria</p>
               </div>
             </div>
 
@@ -98,7 +98,7 @@ const ContactSection: React.FC = () => {
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="https://wa.me/971043698056"
+                  href="https://wa.me/+447901307072"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition"
@@ -106,7 +106,7 @@ const ContactSection: React.FC = () => {
                   <i className="fab fa-whatsapp text-white text-lg"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/icekettle.Jeweller"
+                  href="https://www.instagram.com/ice_kettle?igsh=dzN5OXVzdTVqZGt0"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition"
@@ -181,7 +181,7 @@ const ContactSection: React.FC = () => {
               <div>
                 <button
                   type="submit"
-                  className="bg-black text-white px-8 py-3 rounded hover:bg-gray-800 transition-all duration-300 hover:-translate-y-0.5 w-full md:w-auto"
+                  className="bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-all duration-300 hover:-translate-y-0.5 w-full md:w-auto"
                 >
                   Submit
                 </button>
